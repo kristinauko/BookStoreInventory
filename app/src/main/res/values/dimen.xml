@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin around the floating action button in CatalogActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="half_activity_margin">8dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="four_dp_activity_margin">4dp</dimen>
+
+    <!-- Increment and decrement button width -->
+    <dimen name="increment_decrement_button_width">40dp</dimen>
+
+    <!-- Category name text size in product detail review-->
+    <dimen name="category_name_text_size">18sp</dimen>
+
+    <!-- Product name text size in product detail review-->
+    <dimen name="product_name_text_size">24sp</dimen>
+
+    <!-- Product information size in product detail review-->
+    <dimen name="product_information_text_size">16sp</dimen>
+
+</resources>

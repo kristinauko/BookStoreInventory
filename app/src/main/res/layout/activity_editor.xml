@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Product information category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_product_information" />
+
+        <!-- Input fields -->
+        <LinearLayout style="@style/ProductSupplierLayout">
+
+            <!-- Product name field -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords" />
+
+            <!-- Product price field -->
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_price"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/increment_button"
+                    android:layout_width="@dimen/increment_decrement_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_margin"
+                    android:text="@string/increment_button" />
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_quantity"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/decrement_button"
+                    android:layout_width="@dimen/increment_decrement_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin"
+                    android:text="@string/decrement_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Supplier category -->
+    <LinearLayout
+        android:id="@+id/supplier_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_supplier_information" />
+
+        <!-- Input fields -->
+        <LinearLayout style="@style/ProductSupplierLayout">
+
+            <!-- Supplier name field -->
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords" />
+
+            <!-- Supplier phone number field -->
+            <EditText
+                android:id="@+id/edit_supplier_phone_number"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_phone_number"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/call_supplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call_supplier_button" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
